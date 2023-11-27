@@ -38,3 +38,20 @@ console.log("Computer ha scelto il numero: " + numeroComputer);
 // Sommiamo i 2 numeri
 somma = numeroGiocatore + numeroComputer;
 console.log("la somma è di: " + somma);
+
+// Creo funzione per capire se il risultato è pari o dispari
+function pari_O_Dispari(somma) {
+    if(somma % 2 === 0 && scommessa === 1){
+        return "Ha vinto il Giocatore!";
+    } 
+    else if(somma % 2 && scommessa === 2) {
+        return "Ha vinto il Giocatore!";
+    } 
+    else {
+        return "Ha vinto il Computer!";
+    }
+}
+
+// Dichiaro il vincitore
+pari_O_Dispari(somma);
+console.log(pari_O_Dispari(somma));
